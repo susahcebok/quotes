@@ -1,0 +1,40 @@
+{{!-- The following component displays Ember's default welcome message. --}}
+{{!-- <WelcomePage /> --}}
+	<nav>
+			<div>
+				<div class="nav-item">
+					<a href="#!">Random Quote Generator</a>
+				</div>
+				<div class="nav-item">
+					<a><i class="fab fa-github"></i>Susah Cebok</a>
+					<a href="https://www.facebook.com/bungferry.wa"><i class="fab fa-facebook"></i>Ferry Ayunda</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="quote-card">
+			<h5 class="quote__author">Quote-Inator</h5>
+			<p class="quote__text">A api powered random quote generator. Designed to generate quotes nothing more. Nothing less.</p>
+			<div class="quote__foot">
+				<div class="quote__new-quote">
+					<button class="get-quote"><i class="fas fa-sync-alt"></i>New Quote</button>
+					<button class="copy-quote"><i class="fas fa-clipboard"></i></button>
+				</div>
+				<div class="quote__share">
+					<a
+						href="https://twitter.com/intent/tweet?hashtags=quoteinator&related=github,javascript,html,css,web development&text=📝 Generate a random quote with Quote-Inator made by @bungferry__&tw_p=tweetbutton&url=https://susahcebok.github.io/quote/"
+					>
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.kutipanju.ga/"><i class="fab fa-facebook"></i></a>
+					<a href="https://api.whatsapp.com/send?text=https://www.kutipanju.ga/"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.kutipanju.ga/&title=&summary=Generator kutipan acak bertenaga api. dirancang untuk menghasilkan kutipan tidak lebih, tidak kurang.&source="><i class="fab fa-linkedin"></i></a>
+                                        <a class="me" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+		<script src="quotes.js"></script>
+{{!-- Feel free to remove this! --}}
+
+{{outlet}}
